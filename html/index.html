@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../js/kunde.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- local script -->
+    <script type="text/javascript" src="../js/arrow.js"></script>
     <script type="text/javascript" src="../js/review.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -32,7 +34,6 @@
 
 
     <!-- C O N T E N T -->
-    <div class="text-center container-fluid">
         <div class="row justify-content-around">
             <div class="col-6">
                 <button style="margin: 50px; width: 50%; height: 200px; background-color: black;" type="button"
@@ -133,63 +134,120 @@
         </div>
 
         <div class="row">
-            <div class="col-md-6 fixed">
+            <div class="container pb-6">
+                <h3>Her skal gennemsnittet af stjerner vises</h3>
 
-                <div class="disappeartext">Vil du se hvad andre kunder synes om os? </br>Rul ned for at se reviews</div>
             </div>
+
         </div>
+
 
         <div class="row">
-            <h3 style="margin-top: 200px;"> Her skal der stå de 3 bedste reviews ind fra databasen af</h3>
+            <div class="col-md-6 fixed">
+
+                <div class="disappeartext">
+
+                    Vil du se hvad andre kunder synes om os? </br>Rul ned for at se reviews
+
+
+                </div>
+
+            </div>
 
         </div>
-    </div>
+
+
+        <div class="row">
+            <div class="col-md-6 m-5">
+
+            <div class="arrow animated bounce mb-5 p-3"></div>
+
+                </div>
+            </div>
+
+    <div class="row">
+        <div class="col-md-6 m-5">
+                    <div class="content m-auto">
+
+                        <div class="left myscroll">
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                        </div>
+                        <div class="right">
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                        </div>
+                    </div>
+
+
+        </div>
+        </div>
+
+
 
 
     <!-- F O O T E R -->
-    <footer class="text-center text-white" style="background-color: black;">
+    <footer class="text-white" style="background-color: black;">
 
         <!-- Grid row -->
         <div class="row mt-3 g-0">
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-4">
                 <!-- Content -->
                 <h6 class="text-uppercase fst-italic fw-bold mb-4">
                     Clean By Christensen
                 </h6>
                 <h6>Om os</h6>
                 <p>
-                    Here you can use rows and columns to organize your footer content. Lorem ipsum
-                    dolor sit amet, consectetur adipisicing elit.
+                    Vi er en selvstændig firma der udfører professionel rengøring af hjem og kontor. Vi er der for dig, der gerne vil have mere tid til familien, vennerne, eller bare har brug for en pause.
                 </p>
+
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-5 mb-4">
                 <h6> Kontakt os</h6>
                 <a style="color: white;" href="tel:+4528707721">+45 28707721</a>
                 <a style="color: white;" href="mailto:cleanbychristensen@gmail.com">cleanbychristensen@gmail.com</a>
+
+
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/CleanByChristensen"
+                           role="button"
+                        ><i class="fab fa-facebook-f"></i
+                        ></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1"
+                           href="https://www.instagram.com/cleanbychristensen/"
+                           role="button"
+                        ><i class="fab fa-instagram"></i
+                        ></a>
+
+                    </section>
+                    <!-- Section: Social media -->
+                </div>
+                <!-- Grid container -->
             </div>
             <!-- Grid column -->
 
-            <!-- Grid container -->
-            <div class="container p-4 pb-0">
-                <!-- Section: Social media -->
-                <section class="mb-4">
-                    <!-- Facebook -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/CleanByChristensen"
-                       role="button"
-                    ><i class="fab fa-facebook-f"></i
-                    ></a>
-
-                    <!-- Instagram -->
-                    <a class="btn btn-outline-light btn-floating m-1"
-                       href="https://www.instagram.com/cleanbychristensen/"
-                       role="button"
-                    ><i class="fab fa-instagram"></i
-                    ></a>
-
-                </section>
-                <!-- Section: Social media -->
-            </div>
-            <!-- Grid container -->
         </div>
+        <!-- Grid row -->
 
     </footer>
 
@@ -201,12 +259,17 @@
             if (scroll > temp) {
                 temp = scroll;
                 document.getElementsByClassName('disappeartext')[0].style.opacity='0%';
-        } else {
+                document.getElementsByClassName('arrow')[0].style.opacity='0';
+            } else {
                 temp = scroll;
                 document.getElementsByClassName('disappeartext')[0].style.opacity='100%';
-
+                document.getElementsByClassName('arrow')[0].style.opacity='100%';
             }
         }
+
+
+
+
     </script>
 </div>
 </body>

@@ -29,5 +29,5 @@ class ReviewRenderer {
 
         });
     }
-
 }
+var reviewRenderer = new ReviewRenderer();
