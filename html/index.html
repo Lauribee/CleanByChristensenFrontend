@@ -103,14 +103,14 @@
         </div>
     </div>
 
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
+        <div style="justify-content: center;" class="row">
+            <div class="col-md-6 fixed">
 
-                <div style="margin-top: 50px; font-size: 20px; transition: 0.5s; visibility: visible;" class="disappeartext">Vil du se hvad andre kunder synes om os? </br>Rul ned for at se reviews</div>
+                <div style=" font-size: 20px; transition: 2s; opacity: 100%;" class="disappeartext">Vil du se hvad andre kunder synes om os? </br>Rul ned for at se reviews</div>
             </div>
         </div>
 
-        <div class="row">
+        <div style="" class="row">
             <h3 style="margin-top: 200px"> Her skal der stå de 3 bedste reviews ind fra databasen af</h3>
 
         </div>
@@ -172,10 +172,10 @@
             scroll = window.pageYOffset;
             if(scroll > temp) {
                 temp = scroll;
-                document.getElementsByClassName('disappeartext')[0].style.fontSize='0px';
+                document.getElementsByClassName('disappeartext')[0].style.opacity='0%';
         } else {
                 temp = scroll;
-                document.getElementsByClassName('disappeartext')[0].style.fontSize='20px';
+                document.getElementsByClassName('disappeartext')[0].style.opacity='100%';
 
             }
         }
