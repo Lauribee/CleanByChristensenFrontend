@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="../js/js.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- CSS only -->
@@ -22,7 +22,7 @@
 <div class="text-center container-fluid g-0">
     <!-- H E A D E R -->
     <nav style="background-color: black;" class="navbar navbar-light ">
-        <a style=" display: inline-block; margin: 0 auto;" class="navbar-brand" >
+        <a style=" display: inline-block; margin: 0 auto;" class="navbar-brand">
             <img src="../media/CleanByChristensen.jpg" width="200" height="200" alt="">
         </a>
     </nav>
@@ -30,84 +30,104 @@
 
     <!-- C O N T E N T -->
     <div class="text-center container-fluid">
-    <div class="row justify-content-around">
-        <div class="col-6">
-            <button style="margin: 50px; width: 50%; height: 200px; background-color: black;" type="button"
-                    class="btn btn text-white" data-bs-toggle="modal" data-bs-target="#sendBesked">Book os
-            </button>
-            <!-- P O P U P -->
-            <div class="modal fade" id="sendBesked" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Send os en besked!</h5>
-                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="emne" class="col-form-label">Emne:</label>
-                                    <input type="text" class="form-control" id="emne">
-                                    <label for="navn" class="col-form-label">Navn:</label>
-                                    <input type="text" class="form-control" id="navn">
-                                    <label for="email" class="col-form-label">Email:</label>
-                                    <input type="email" class="form-control" id="email">
-                                    <label for="adresse" class="col-form-label">Adresse:</label>
-                                    <input type="text" class="form-control" id="adresse">
-                                </div>
-                                <div class="form-group">
-                                    <label for="beskrivelse" class="col-form-label">Kort beskrivelse af situationen:</label>
-                                    <textarea class="form-control" id="beskrivelse"></textarea>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6">
-            <button style="margin: 50px; width: 50%; height: 200px; background-color: black;" type="button"
-                    class="btn btn text-white" data-bs-toggle="modal" data-bs-target="#sendRating">Rate os
-            </button>
-
-            <!-- P O P U P -->
-            <div class="modal fade" id="sendRating" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLong">Modal title</h5>
-                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="titel" class="col-form-label">Antal stjerner (1-5)</label>
-                                    <input type="number" class="form-control" id="titel">
-                                </div>
-                                <div class="form-group">
-                                    <label for="besked-tekst" class="col-form-label">Besked:</label>
-                                    <textarea class="form-control" id="besked-tekst"></textarea>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="row justify-content-around">
+            <div class="col-6">
+                <button style="margin: 50px; width: 50%; height: 200px; background-color: black;" type="button"
+                        class="btn btn text-white" data-bs-toggle="modal" data-bs-target="#sendBesked">Book os
+                </button>
+                <!-- P O P U P -->
+                <div class="modal fade" id="sendBesked" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Send os en besked!</h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="emne" class="col-form-label">Emne:</label>
+                                        <input type="text" class="form-control" id="emne">
+                                        <label for="navn" class="col-form-label">Navn:</label>
+                                        <input type="text" class="form-control" id="navn">
+                                        <label for="email" class="col-form-label">Email:</label>
+                                        <input type="email" class="form-control" id="email">
+                                        <label for="adresse" class="col-form-label">Adresse:</label>
+                                        <input type="text" class="form-control" id="adresse">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="beskrivelse" class="col-form-label">Kort beskrivelse af
+                                            hvad der skal gøres:</label>
+                                        <textarea class="form-control" id="beskrivelse"></textarea>
+                                    </div>
+                                </form>
+                                <p><small>Vi vender tilbage med et opkald eller email, hvor vi kan gå over mulighed og pris!</small></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Luk</button>
+                                <button type="button" class="btn btn-primary">Send besked</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-6">
+                <button style="margin: 50px; width: 50%; height: 200px; background-color: black;" type="button"
+                        class="btn btn text-white" data-bs-toggle="modal" data-bs-target="#sendRating">Rate os
+                </button>
 
+                <!-- P O P U P -->
+                <div class="modal fade" id="sendRating" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLong">Giv os en rating!</h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <h6>Antal stjerner:</h6>
+                                    <div class="form-group">
+                                        <div class="star-rating">
+                                            <input type="radio" name="stars" id="star-a" value="5"/>
+                                            <label for="star-a"></label>
+
+                                            <input type="radio" name="stars" id="star-b" value="4"/>
+                                            <label for="star-b"></label>
+
+                                            <input type="radio" name="stars" id="star-c" value="3"/>
+                                            <label for="star-c"></label>
+
+                                            <input type="radio" name="stars" id="star-d" value="2"/>
+                                            <label for="star-d"></label>
+
+                                            <input type="radio" name="stars" id="star-e" value="1"/>
+                                            <label for="star-e"></label>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="besked-tekst" class="col-form-label">Besked:</label>
+                                        <textarea class="form-control" id="besked-tekst"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Luk</button>
+                                <button type="button" class="btn btn-primary">Send rating</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
 
         <div style="justify-content: center;" class="row">
             <div class="col-md-6 fixed">
@@ -123,60 +143,59 @@
     </div>
 
 
+    <!-- F O O T E R -->
+    <footer class="text-center text-white fixed-bottom position-sticky" style="background-color: black;">
 
+        <!-- Grid row -->
+        <div class="row mt-3 g-0">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fst-italic fw-bold mb-4">
+                    Clean By Christensen
+                </h6>
+                <h6>Om os</h6>
+                <p>
+                    Here you can use rows and columns to organize your footer content. Lorem ipsum
+                    dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <h6> Kontakt os</h6>
+                <a style="color: white;" href="tel:+4528707721">+45 28707721</a>
+                <a style="color: white;" href="mailto:cleanbychristensen@gmail.com">cleanbychristensen@gmail.com</a>
+            </div>
+            <!-- Grid column -->
 
-<!-- F O O T E R -->
-<footer class="text-center text-white fixed-bottom position-sticky" style="background-color: black;">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/CleanByChristensen"
+                       role="button"
+                    ><i class="fab fa-facebook-f"></i
+                    ></a>
 
-    <!-- Grid row -->
-    <div class="row mt-3 g-0">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fst-italic fw-bold mb-4">
-                Clean By Christensen
-            </h6>
-            <h6>Om os</h6>
-            <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit.
-            </p>
-            <h6> Kontakt os</h6>
-            <a style="color: white;" href="tel:+4528707721">+45 28707721</a>
-            <a style="color: white;" href="mailto:cleanbychristensen@gmail.com">cleanbychristensen@gmail.com</a>
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1"
+                       href="https://www.instagram.com/cleanbychristensen/"
+                       role="button"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
         </div>
-        <!-- Grid column -->
 
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/CleanByChristensen"
-                   role="button"
-                ><i class="fab fa-facebook-f"></i
-                ></a>
-
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/cleanbychristensen/"
-                   role="button"
-                ><i class="fab fa-instagram"></i
-                ></a>
-
-            </section>
-            <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
-    </div>
-
-</footer>
+    </footer>
 
     <script>
         var scroll = 0;
         var temp = 0;
-        window.onscroll=function(){
+        window.onscroll = function () {
             scroll = window.pageYOffset;
-            if(scroll > temp) {
+            if (scroll > temp) {
                 temp = scroll;
                 document.getElementsByClassName('disappeartext')[0].style.opacity='0%';
         } else {
