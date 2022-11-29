@@ -1,11 +1,26 @@
-
-.container-fluid {
-    flex: 1;
-    overflow-y: scroll;
-
-
+.navbar {
+    background-color: black;
 }
 
+.navbar .navbar-brand {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.row {
+    justify-content: center;
+}
+
+.disappeartext {
+    font-size: 20px;
+    transition: 2s;
+    opacity: 100%;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+}
 /* use reverse flexbox to take advantage of flex-direction: reverse */
 .star-rating {
     display: flex;
