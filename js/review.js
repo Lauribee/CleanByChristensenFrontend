@@ -13,7 +13,6 @@ class ReviewRenderer {
             let response = await fetch(this.endpointUrl);
             this.data = await response.json();
 
-            // Lets update the page.
             this.updateUI();
 
         } catch (error) {
@@ -23,11 +22,7 @@ class ReviewRenderer {
     };
 
     updateUI() {
-        let review = $("#review");
-        this.data.forEach(element => {
-            review.append($("<option />").val(element.id).text(element.amountOfStars + " " + element.reviewMessage));
 
-        });
     }
 }
 var reviewRenderer = new ReviewRenderer();

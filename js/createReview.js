@@ -18,5 +18,6 @@ function addReview(){
 }).done(function(data) {
 console.log(data);
 });
-    event.preventDefault();
+
+
 }

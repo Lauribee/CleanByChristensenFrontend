@@ -57,12 +57,18 @@
                                     <div class="form-group">
                                         <label for="emne" class="col-form-label">Emne:</label>
                                         <input type="text" class="form-control" id="emne">
-                                        <label for="navn" class="col-form-label">Navn:</label>
-                                        <input type="text" class="form-control" id="navn">
+                                        <label for="fornavn" class="col-form-label">Fornavn:</label>
+                                        <input type="text" class="form-control" id="fornavn">
+                                        <label for="efternavn" class="col-form-label">Efternavn:</label>
+                                        <input type="text" class="form-control" id="efternavn">
                                         <label for="email" class="col-form-label">Email:</label>
                                         <input type="email" class="form-control" id="email">
+                                        <label for="tlf" class="col-form-label">Telefonnummer:</label>
+                                        <input type="text" class="form-control" id="tlf">
                                         <label for="adresse" class="col-form-label">Adresse:</label>
                                         <input type="text" class="form-control" id="adresse">
+                                        <label for="kvm" class="col-form-label">Kvadratmeter:</label>
+                                        <input type="text" class="form-control" id="kvm">
                                     </div>
                                     <div class="form-group">
                                         <label for="beskrivelse" class="col-form-label">Kort beskrivelse af
@@ -74,7 +80,8 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Luk</button>
-                                <button type="button" class="btn btn-primary">Send besked</button>
+                                <button type="submit" class="btn btn-primary" onclick="addCustomer()">Send besked</button>
+                                Ved at trykke på denne knap, giver du os tilladelse til at gemme informationer og data om dig i vores database
                             </div>
                         </div>
                     </div>
