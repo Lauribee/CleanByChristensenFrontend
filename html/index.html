@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="../js/kunde.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- local script -->
     <script type="text/javascript" src="../js/arrow.js"></script>
     <script type="text/javascript" src="../js/review.js"></script>
     <script type="text/javascript" src="../js/createReview.js"></script>
+    <script type="text/javascript" src="../js/createCustomer.js"></script>
+
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -61,8 +62,6 @@
                                         <input type="text" class="form-control" id="fornavn">
                                         <label for="efternavn" class="col-form-label">Efternavn:</label>
                                         <input type="text" class="form-control" id="efternavn">
-                                        <label for="email" class="col-form-label">Email:</label>
-                                        <input type="email" class="form-control" id="email">
                                         <label for="tlf" class="col-form-label">Telefonnummer:</label>
                                         <input type="text" class="form-control" id="tlf">
                                         <label for="adresse" class="col-form-label">Adresse:</label>
@@ -175,29 +174,16 @@
             </div>
 
     <div class="row">
-        <div class="col-md-6 m-5">
-                    <div class="content m-auto">
+        <div style="color: white;" class="col-md-6 m-5">
+                    <div class="content m-auto" >
 
-                        <div class="left myscroll">
-                            <div class="sidebar-item"></div>
-                            <div class="sidebar-item"></div>
-                            <div class="sidebar-item"></div>
-                            <div class="sidebar-item"></div>
-                            <div class="sidebar-item"></div>
-                            <div class="sidebar-item"></div>
-                            <div class="sidebar-item"></div>
+                        <div class="left myscroll" id="stars">
                             <div class="sidebar-item"></div>
                         </div>
-                        <div class="right">
-                            <div class="sidebar-item"></div>
-                            <div class="sidebar-item"></div>
-                            <div class="sidebar-item"></div>
-                            <div class="sidebar-item"></div>
-                            <div class="sidebar-item"></div>
-                            <div class="sidebar-item"></div>
-                            <div class="sidebar-item"></div>
+                        <div class="right" id="message">
                             <div class="sidebar-item"></div>
                         </div>
+
                     </div>
 
 

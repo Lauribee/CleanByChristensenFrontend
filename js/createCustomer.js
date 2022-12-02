@@ -3,12 +3,14 @@
 function addCustomer(){
 
     let formData = {
+        subject : $("#emne").val(),
         firstName : $("#fornavn").val(),
         lastName : $("#efternavn").val(),
         address : $("#adresse").val(),
         phoneNumber : $("#tlf").val(),
-        message : $("#sendBesked").val(),
+        message : $("#beskrivelse").val(),
         kvm : $("#kvm").val()
+
     };
 
 

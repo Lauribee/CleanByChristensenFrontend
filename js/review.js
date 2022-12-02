@@ -1,4 +1,22 @@
-'use strict'
+fetch("http://localhost:8080/api/reviews").then((data)=>{
+    //console.log(data); json format
+    return data.json(); //converted to object
+}).then((objectData)=>{
+    console.log(objectData);
+    let stars="";
+    let message="";
+    objectData.map((values)=>{
+        stars+=`<div class="sidebar-item">${values.amountOfStars}</div>`;
+        message+=`<div class="sidebar-item">${values.reviewMessage}</div>`;
+    });
+    document.getElementById("stars").innerHTML = stars;
+    document.getElementById("message").innerHTML = message;
+}).catch((err) => {
+    console.log(err);
+})
+
+
+/**'use strict'
 
 class ReviewRenderer {
     endpointUrl = 'https//localhost:8080/api/reviews';
@@ -25,4 +43,4 @@ class ReviewRenderer {
 
     }
 }
-var reviewRenderer = new ReviewRenderer();
+var reviewRenderer = new ReviewRenderer();**/

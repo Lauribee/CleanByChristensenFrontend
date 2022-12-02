@@ -23,12 +23,12 @@ html {
 
 
 .left {
-    width: 70%;
+    width: 30%;
     background-color: goldenrod;
 
 }
 .right {
-    width: 30%;
+    width: 70%;
     background-color: goldenrod;
 }
 .sidebar-item {
