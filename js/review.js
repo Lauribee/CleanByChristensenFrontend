@@ -1,4 +1,4 @@
-fetch("http://localhost:8080/api/reviews").then((data)=>{
+fetch("http://20.82.149.138:3306/api/reviews").then((data)=>{
     //console.log(data); json format
     return data.json(); //converted to object
 }).then((objectData)=>{
